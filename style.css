@@ -15,6 +15,7 @@
 
   color: white;
   justify-content: space-around;
+  height: 50px;
 }
 .header {
   margin: 50px 20px;
@@ -25,12 +26,12 @@
 }
 
 .container {
-  width: 1000px;
+  width: 100%;
   max-width: 90%;
-  background-color: rgba(236, 236, 236, 0.959);
+  background-color: whitesmoke;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 
   /* border: 2px solid red; */
 }
@@ -41,12 +42,19 @@
   /* border: 2px solid green; */
   margin: 15px;
   background-color: white;
-  z-index: 10;
+
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.album:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease-in;
 }
 
 .album-image img {
   width: 100%;
   height: 100%;
+  border-top-left-radius: 10px;
 }
 
 .album-text {
